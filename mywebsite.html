@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .project-card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .contact-form label {
+            display: block;
+            margin-top: 10px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .contact-form input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Personal Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>Welcome to my personal website! I'm [Your Name], a [brief description of yourself, e.g., student, developer, hobbyist]. This website is a place to share my work, projects, and interests.</p>
+    </section>
+
+    <section id="projects" class="container">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>Project Title 1</h3>
+            <p>Description of project 1. Include details about what it is, technologies used, and your role.</p>
+            <a href="[project-link]" target="_blank">View Project</a>
+        </div>
+        <div class="project-card">
+            <h3>Project Title 2</h3>
+            <p>Description of project 2. Include details about what it is, technologies used, and your role.</p>
+            <a href="[project-link]" target="_blank">View Project</a>
+        </div>
+        <!-- Add more project cards as needed -->
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Contact Me</h2>
+        <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <input type="submit" value="Send">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+    </footer>
+</body>
+</html>
